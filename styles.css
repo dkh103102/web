@@ -1,0 +1,229 @@
+.flashing-bg {
+  background: rgb(31, 117, 9);
+  animation: 1s infinite alternate ease-in-out bg-flashing;
+}
+
+body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+#logo {
+  position: absolute;
+  padding-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#scrolling-banner {
+  width: 100%;
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url(font/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: roboto-light;
+  src: url(font/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(font/Roboto-Regular.ttf) format("truetype");
+}
+
+.roboto-m {
+  font-family: roboto-medium;
+}
+
+.roboto-l {
+  font-family: roboto-light;
+}
+
+#bottom-txt {
+  font-family: roboto-regular;
+  font-weight: 300;
+}
+
+#top-txt {
+  position: absolute;
+  text-align: center;
+  font-family: roboto-regular;
+  width: 100%;
+  font-size: 15.5px;
+  margin-top: 13px;
+}
+
+#main-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.txt-white {
+  color: white;
+}
+
+.dot {
+  position: absolute;
+  z-index: 1000;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(31, 117, 9);
+  border-radius: 50%;
+  top: 22.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: white;
+}
+
+#top-section {
+  overflow: hidden;
+  width: 100vw;
+  height: 21%;
+  padding-top: 20px;
+}
+
+#center-outline {
+  margin: 0;
+  height: 320px;
+  width: 100vw;
+  position: relative;
+  background: rgb(31, 117, 9);
+}
+
+#center-section {
+  margin: 0;
+  height: 96%;
+  width: 100vw;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+
+  img {
+    padding-top: 10px;
+    position: absolute;
+    margin: 0 auto;
+  }
+}
+
+#fading-warning {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 59%;
+  font-family: roboto-regular;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: rgb(31, 117, 9);
+  animation: 1s infinite alternate ease-in-out txt-fade;
+}
+
+.txt-time {
+  font-weight: 900;
+  font-size: 17px;
+  font-family: roboto-medium;
+  color: rgb(94, 93, 93);
+}
+
+#date {
+  position: absolute;
+  z-index: 1000;
+  top: 90%;
+  left: 15px;
+}
+
+#count-up-clock {
+  position: absolute;
+  z-index: 1000;
+  top: 90%;
+  right: 10%;
+}
+
+#bottom-section {
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+#count-down-clock {
+  font-size: 35px;
+  font-family: roboto-light;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@keyframes bg-flashing {
+  from {
+    background-color: rgb(31, 117, 9);
+  }
+  to {
+    background-color: rgb(7, 25, 4);
+  }
+}
+
+@keyframes txt-fade {
+  from {
+    color: rgb(31, 117, 9);
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100%;
+  }
+}
+
+/* Photo Banner */
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.photobanner {
+  height: 25px;
+  width: 3550px;
+  font-size: 0;
+}
+
+.photobanner img {
+  margin-right: 5px;
+  height: 25x;
+  width: 350px;
+}
+
+.photobanner img {
+  transition: all 0.5s ease;
+}
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 30s linear infinite;
+}
+
+@keyframes bannermove {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: -2130px;
+  }
+}
