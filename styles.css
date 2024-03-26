@@ -116,7 +116,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 1000;
-  top: 59%;
+  top: 63%;
   font-family: roboto-regular;
   text-align: center;
   font-size: 24px;
@@ -127,7 +127,7 @@ body {
 
 .txt-time {
   font-weight: 900;
-  font-size: 17px;
+  font-size: 14px;
   font-family: roboto-medium;
   color: rgb(94, 93, 93);
 }
