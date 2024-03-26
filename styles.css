@@ -116,7 +116,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 1000;
-  top: 63%;
+  top: 62%;
   font-family: roboto-regular;
   text-align: center;
   font-size: 24px;
@@ -135,14 +135,14 @@ body {
 #date {
   position: absolute;
   z-index: 1000;
-  top: 90%;
+  top: 92%;
   left: 15px;
 }
 
 #count-up-clock {
   position: absolute;
   z-index: 1000;
-  top: 90%;
+  top: 92%;
   right: 10%;
 }
 
